@@ -1,0 +1,24 @@
+---
+- name: Configuracion de Servicios NetDevOps
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Mensaje de inicio de despliegue
+      ansible.builtin.debug:
+        msg: "Iniciando despliegue de servicios: Web, FTP, Mail y DNS..."
+
+    - name: Simular configuracion de Servidor Web HTTP
+      ansible.builtin.debug:
+        msg: "Servidor Web configurado en puerto 80/443."
+
+    - name: Simular configuracion de Servidor FTP
+      ansible.builtin.debug:
+        msg: "Servidor FTP configurado en puerto 21."
+
+    - name: Simular configuracion de Servidor de Correo (SMTP/IMAP)
+      ansible.builtin.debug:
+        msg: "Servidor de Correo configurado en puerto 25/143."
+
+    - name: Simular configuracion de Servidor DNS
+      ansible.builtin.debug:
+        msg: "Servidor DNS configurado en puerto 53."
